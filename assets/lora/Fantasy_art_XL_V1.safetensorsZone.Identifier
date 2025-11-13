@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://civitai.com/
+HostUrl=https://civitai-delivery-worker-prod.5ac0637cfd0766c97916cefa3764fbdf.r2.cloudflarestorage.com/259180/model/fantasyArtXLV1.rmJa.safetensors?X-Amz-Expires=86400&response-content-disposition=attachment%3B%20filename%3D%22Fantasy_art_XL_V1.safetensors%22&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=e01358d793ad6966166af8b3064953ad/20250623/us-east-1/s3/aws4_request&X-Amz-Date=20250623T135626Z&X-Amz-SignedHeaders=host&X-Amz-Signature=70d9446cff965e8d30fb3a8d41c02f4acb2602af02ba18f998f10837c7a4a5ed

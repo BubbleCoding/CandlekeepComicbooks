@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://civitai.com/
+HostUrl=https://civitai-delivery-worker-prod.5ac0637cfd0766c97916cefa3764fbdf.r2.cloudflarestorage.com/model/312884/comicBook.VFbj.safetensors?X-Amz-Expires=86400&response-content-disposition=attachment%3B%20filename%3D%22comic_book_illustration.safetensors%22&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=e01358d793ad6966166af8b3064953ad/20250623/us-east-1/s3/aws4_request&X-Amz-Date=20250623T112214Z&X-Amz-SignedHeaders=host&X-Amz-Signature=0419c118eb20d2a24a0e55201de67704f4406b22fb309244337399328d34f725
