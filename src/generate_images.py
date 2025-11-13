@@ -1,6 +1,6 @@
 from diffusers import DiffusionPipeline
 import torch
-import AddTextToImage
+from src import AddTextToImage
 import json
 
 testing = False
@@ -17,11 +17,11 @@ def generate_images_from_script(script_path):
         use_safetensors=True,
         variant="fp16"
     )
-    pipe.load_lora_weights("../lora/Fantasy_art_XL_V1.safetensors")
+    pipe.load_lora_weights("assets/lora/Fantasy_art_XL_V1.safetensors")
     pipe.to("cuda")
 
     for i, panel in enumerate(comic_script):
-        prompt = "Comic book illustration. Vivid fantasy." + panel.get("sdxl_prompt", "")
+        prompt = "Comic book illustration. Vivid fantasy. " + panel.get("sdxl_prompt", "")
         negative_prompt = panel.get("negative_prompt", "")
 
         if not prompt:

@@ -29,7 +29,8 @@ def adaptive_panel_generator(transcript, chunk_size=15, max_retries=3):
                         memory_buffer.pop(0)
                     story_so_far = "\n".join(memory_buffer)
 
-                    num_used = max(used_indices) + 1 if used_indices else 1
+                    # Move forward by the number of segments actually used
+                    num_used = len(used_indices) if used_indices else 1
                     position += num_used
                     break  # success, break out of retry loop
                 else:
@@ -43,7 +44,7 @@ def adaptive_panel_generator(transcript, chunk_size=15, max_retries=3):
 
         else:
             print("❌ Failed after maximum retries, skipping chunk.")
-            position += 1  # give up and move on
+            position += chunk_size  # Skip the entire chunk to avoid getting stuck
 
     return panels
 
@@ -84,7 +85,7 @@ Output JSON in this format:
   "summary": "One sentence summary of the panel for story memory."
 }}
 
-- Every panel must include all 9 fields and cannot be empty.
+- Every panel must include all 8 fields (setting, characters, objects, action, mood, camera_view, lighting, text) and cannot be empty.
 - Output only valid JSON — no extra text, no commentary.
 """
 

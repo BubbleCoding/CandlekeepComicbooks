@@ -12,7 +12,7 @@ def add_text_to_panel(text, panel_image):
 
 def generate_text_image(text, width=1144, height=120):
     # Required variables
-    font = ImageFont.truetype(font="manga-temple.ttf", size=30)
+    font = ImageFont.truetype(font="assets/fonts/manga-temple.ttf", size=30)
     words = text.split()
     lines = []
     current_line = ""

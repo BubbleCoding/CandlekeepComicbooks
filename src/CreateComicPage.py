@@ -7,7 +7,6 @@ def resize_and_add_border(image, target_size, border_size):
     return resized_image
 
 def load_images():
-    number_of_images = 6
     images_loaded = []
     image_files = os.listdir("output/images/imagesWithText")
 
@@ -48,7 +47,7 @@ def main():
             result_image.paste(resized_img, (x, y))
 
         result_image = result_image.resize((1024, 1536))
-        result_image.save(f"comicPages/comicPage_{i // images_per_page}.jpg")
+        result_image.save(f"output/comicPages/comicPage_{i // images_per_page}.jpg")
         print(f"Saved comic page: comicPage_{i // images_per_page}.jpg")
 
 if __name__ == "__main__":
