@@ -1,11 +1,32 @@
+# Audio files
 /audio.mp3
-/comic.jpg
+*.wav
+*.WAV
+
+# Images
 /images
+**/*.jpg
+!/comic.jpg
+**/*.png
+
+# Temporary/test files
 /project
 /recording.txt:Zone.Identifier
 /test.py
+/comic.jpg
+/V2
+
+# Python
 /env
-**/*.jpg
-!/comic.jpg
-/__pycache__
+__pycache__/
 *.pyc
+
+# Model weights and LoRA files
+*.safetensors
+*.safetensors:Zone.Identifier
+/lora
+assets/lora/*.safetensors
+
+# Output files
+*.json
+output/
