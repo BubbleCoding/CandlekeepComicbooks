@@ -1,0 +1,25 @@
+{
+  "_instructions": "Fill in one entry per player character. speaker_id maps to pyannote output (SPEAKER_00 etc.) - leave empty if unknown. appearance and distinctive_features are injected directly into image prompts so be specific and visual.",
+  "characters": [
+    {
+      "name": "Dungeon Master",
+      "speaker_id": "SPEAKER_00",
+      "appearance": "",
+      "class": "Narrator",
+      "distinctive_features": "",
+      "color_palette": ""
+    },
+    {
+      "name": "Character Name",
+      "speaker_id": "SPEAKER_01",
+      "appearance": "e.g. tall human fighter with short black hair, weathered face, scar across left cheek",
+      "class": "e.g. Fighter",
+      "distinctive_features": "e.g. battered steel plate armor, red cloak, longsword at hip",
+      "color_palette": "e.g. red and grey"
+    }
+  ],
+  "style": {
+    "art_style": "comic book panel, bold ink outlines, flat colors, high contrast, D&D fantasy illustration",
+    "negative_prompt": "deformed, blurry, extra limbs, poorly drawn hands, extra fingers, mutated, out of frame, ugly, tiling, low resolution, bad anatomy, watermark, photorealistic, 3d render"
+  }
+}

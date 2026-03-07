@@ -1,0 +1,9 @@
+{
+  "_instructions": "Fill this in once per session before running the pipeline. This context is injected into every LLM call to ground the narrative.",
+  "campaign_name": "e.g. Curse of Strahd",
+  "setting": "e.g. Dark gothic fantasy. The land of Barovia, a valley trapped under the rule of the vampire Strahd von Zarovich.",
+  "tone": "e.g. Horror, mystery, dark fantasy",
+  "current_arc": "e.g. The party has just arrived in the village of Barovia and is investigating rumors of missing children.",
+  "party_members": ["Character Name 1", "Character Name 2"],
+  "recent_events": "e.g. The party defeated a pack of wolves on the road and found a mysterious letter signed by the Count."
+}

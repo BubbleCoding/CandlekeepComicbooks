@@ -27,6 +27,10 @@ __pycache__/
 /lora
 assets/lora/*.safetensors
 
-# Output files
+# Output files (intermediate pipeline JSON)
 *.json
 output/
+
+# Allow config templates
+!assets/characters.json
+!assets/session_brief.json
