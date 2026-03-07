@@ -97,13 +97,8 @@ def generate_images_from_script(
 
         print(f"  Generating panel {i + 1}/{len(comic_script)}...")
 
-        # FLUX does not use negative prompts natively, but pass it for
-        # models/pipelines that support guidance (e.g. FLUX.1-dev with CFG).
-        negative_prompt = panel.get("negative_prompt", "")
-
         result = pipe(
             prompt=prompt,
-            negative_prompt=negative_prompt if negative_prompt else None,
             height=1024,
             width=768,
             num_inference_steps=28,

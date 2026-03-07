@@ -130,6 +130,7 @@ def process_script(
             panel["negative_prompt"] = negative_prompt
         time.sleep(0.2)
 
+    Path(output_path).parent.mkdir(parents=True, exist_ok=True)
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(script, f, indent=2, ensure_ascii=False)
 

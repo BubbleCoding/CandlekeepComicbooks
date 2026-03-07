@@ -120,11 +120,11 @@ def run_pipeline(args: argparse.Namespace) -> None:
 
     # Step 6: Create comic pages
     print("\nStep 6: Creating comic pages...")
-    CreateComicPage.main()
+    CreateComicPage.main(output_dir=o)
 
     # Step 7: Merge into PDF
     print("\nStep 7: Merging into PDF...")
-    pdfMerger.main()
+    pdfMerger.main(output_dir=o)
 
     print(f"\nDone! Comic saved to {o}/comic.pdf")
 

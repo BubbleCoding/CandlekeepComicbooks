@@ -326,6 +326,7 @@ def adaptive_panel_generator(
 
 
 def save_panels(panels: List[Dict[str, Any]], output_path: str) -> None:
+    Path(output_path).parent.mkdir(parents=True, exist_ok=True)
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(panels, f, indent=2, ensure_ascii=False)
 
